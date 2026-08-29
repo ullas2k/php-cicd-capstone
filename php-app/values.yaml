@@ -1,0 +1,10 @@
+image:
+  repository: 995938833134.dkr.ecr.us-east-2.amazonaws.com/php-app
+  tag: "3"
+
+mysql:
+  password: root123
+  database: employee_db
+
+service:
+  nodePort: 30080
