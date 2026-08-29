@@ -9,12 +9,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/ullas2k/php-cicd-capstone.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t php-app:${IMAGE_TAG} .'
